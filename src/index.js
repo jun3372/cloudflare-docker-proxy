@@ -5,19 +5,30 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 
+// const routes = {
+//   // production
+//   "docker.emtk.cn": dockerHub,
+//   "quay.emtk.cn": "https://quay.io",
+//   "gcr.emtk.cn": "https://gcr.io",
+//   "k8s-gcr.emtk.cn": "https://k8s.gcr.io",
+//   "k8s.emtk.cn": "https://registry.k8s.io",
+//   "ghcr.emtk.cn": "https://ghcr.io",
+//   "cloudsmith.emtk.cn": "https://docker.cloudsmith.io",
+//   "ecr.emtk.cn": "https://public.ecr.aws",
+
+//   // staging
+//   "docker-staging.emtk.cn": dockerHub,
+// };
 const routes = {
   // production
   "docker.emtk.cn": dockerHub,
-  "quay.emtk.cn": "https://quay.io",
-  "gcr.emtk.cn": "https://gcr.io",
-  "k8s-gcr.emtk.cn": "https://k8s.gcr.io",
-  "k8s.emtk.cn": "https://registry.k8s.io",
-  "ghcr.emtk.cn": "https://ghcr.io",
-  "cloudsmith.emtk.cn": "https://docker.cloudsmith.io",
-  "ecr.emtk.cn": "https://public.ecr.aws",
-
-  // staging
-  "docker-staging.emtk.cn": dockerHub,
+  "quay.io.emtk.cn": "https://quay.io",
+  "gcr.io.emtk.cn": "https://gcr.io",
+  "ghcr.io.emtk.cn": "https://ghcr.io",
+  "k8s.gcr.emtk.cn": "https://k8s.gcr.io",
+  "registry.k8s.io.emtk.cn": "https://registry.k8s.io",
+  "docker.cloudsmith.io.emtk.cn": "https://docker.cloudsmith.io",
+  "public.ecr.aws.emtk.cn": "https://public.ecr.aws",
 };
 
 function routeByHosts(host) {
