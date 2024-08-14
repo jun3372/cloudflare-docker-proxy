@@ -22,13 +22,13 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "docker.emtk.cn": dockerHub,
-  "quay.io.emtk.cn": "https://quay.io",
   "gcr.io.emtk.cn": "https://gcr.io",
   "ghcr.io.emtk.cn": "https://ghcr.io",
-  "k8s.gcr.emtk.cn": "https://k8s.gcr.io",
+  "quay.io.emtk.cn": "https://quay.io",
+  "k8s.gcr.io.emtk.cn": "https://k8s.gcr.io",
   "registry.k8s.io.emtk.cn": "https://registry.k8s.io",
-  "docker.cloudsmith.io.emtk.cn": "https://docker.cloudsmith.io",
   "public.ecr.aws.emtk.cn": "https://public.ecr.aws",
+  "docker.cloudsmith.io.emtk.cn": "https://docker.cloudsmith.io",
 };
 
 function routeByHosts(host) {
